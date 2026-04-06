@@ -1,0 +1,10 @@
+{
+    "name": "your-ai-companion-root",
+    "private": true,
+    "scripts": {
+        "dev": "npm run dev --prefix your-ai-companion-main",
+        "build": "npm run build --prefix your-ai-companion-main",
+        "lint": "npm run lint --prefix your-ai-companion-main",
+        "preview": "npm run preview --prefix your-ai-companion-main"
+    }
+}
