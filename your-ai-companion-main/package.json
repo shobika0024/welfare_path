@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
@@ -90,14 +89,3 @@
     "vite": "^5.4.19"
   }
 }
-=======
-    "name": "your-ai-companion-root",
-    "private": true,
-    "scripts": {
-        "dev": "npm run dev --prefix your-ai-companion-main",
-        "build": "npm run build --prefix your-ai-companion-main",
-        "lint": "npm run lint --prefix your-ai-companion-main",
-        "preview": "npm run preview --prefix your-ai-companion-main"
-    }
-}
->>>>>>> f8bb15a6cde7324af7fa7fa630d0c9ae47a322c6

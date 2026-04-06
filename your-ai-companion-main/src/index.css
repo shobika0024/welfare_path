@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WelfarePath - Government Schemes Portal Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 50% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 50% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 50% 15%;
+
+    --primary: 215 70% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 215 50% 15%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 25% 40%;
+
+    --accent: 25 95% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 215 70% 20%;
+
+    --radius: 0.5rem;
+
+    /* Category colors */
+    --agriculture: 142 71% 35%;
+    --education: 215 70% 25%;
+    --healthcare: 340 65% 47%;
+    --women-child: 24 95% 53%;
+    --housing: 262 52% 47%;
+    --senior: 199 89% 48%;
+
+    /* Hero/Footer gradient */
+    --hero-bg: 215 70% 18%;
+    --hero-bg-light: 215 60% 25%;
+
+    --sidebar-background: 215 70% 18%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 215 70% 20%;
+    --sidebar-accent: 215 70% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 215 70% 25%;
+    --sidebar-ring: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 215 50% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 50% 13%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 50% 13%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 215 70% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 50% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 215 50% 18%;
+    --muted-foreground: 215 25% 60%;
+
+    --accent: 25 95% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 50% 20%;
+    --input: 215 50% 20%;
+    --ring: 25 95% 55%;
+
+    --hero-bg: 215 70% 15%;
+    --hero-bg-light: 215 60% 22%;
+
+    --sidebar-background: 215 70% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 25 95% 55%;
+    --sidebar-accent: 215 70% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 70% 20%;
+    --sidebar-ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+}
+
+@layer utilities {
+  .category-agriculture {
+    @apply bg-[hsl(var(--agriculture))] text-white;
+  }
+
+  .category-education {
+    @apply bg-[hsl(var(--education))] text-white;
+  }
+
+  .category-healthcare {
+    @apply bg-[hsl(var(--healthcare))] text-white;
+  }
+
+  .category-women {
+    @apply bg-[hsl(var(--women-child))] text-white;
+  }
+
+  .category-housing {
+    @apply bg-[hsl(var(--housing))] text-white;
+  }
+
+  .category-senior {
+    @apply bg-[hsl(var(--senior))] text-white;
+  }
+
+  .icon-agriculture {
+    @apply text-[hsl(var(--agriculture))];
+  }
+
+  .icon-education {
+    @apply text-[hsl(var(--education))];
+  }
+
+  .icon-healthcare {
+    @apply text-[hsl(var(--healthcare))];
+  }
+
+  .icon-women {
+    @apply text-[hsl(var(--women-child))];
+  }
+
+  .icon-housing {
+    @apply text-[hsl(var(--housing))];
+  }
+
+  .icon-senior {
+    @apply text-[hsl(var(--senior))];
+  }
+
+  .bg-icon-agriculture {
+    @apply bg-[hsl(var(--agriculture)/0.1)];
+  }
+
+  .bg-icon-education {
+    @apply bg-[hsl(var(--education)/0.1)];
+  }
+
+  .bg-icon-healthcare {
+    @apply bg-[hsl(var(--healthcare)/0.1)];
+  }
+
+  .bg-icon-women {
+    @apply bg-[hsl(var(--women-child)/0.1)];
+  }
+
+  .bg-icon-housing {
+    @apply bg-[hsl(var(--housing)/0.1)];
+  }
+
+  .bg-icon-senior {
+    @apply bg-[hsl(var(--senior)/0.1)];
+  }
+}

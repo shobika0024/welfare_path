@@ -1,0 +1,7 @@
+project_id = "hyadxkpejtookxupjvsj"
+
+[functions.welfare-chat]
+verify_jwt = false
+
+[functions.text-to-speech]
+verify_jwt = false
